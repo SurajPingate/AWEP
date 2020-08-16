@@ -1,0 +1,58 @@
+<!-- 2. Create a Simple Form with Username and Password Field and perform following DOM Operations
+a. Empty validation for all the fields.
+b. Read the value of the above fields and display it in the page, below the forms.
+c. Clear the fields once the user submit the form. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .design{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-image: url(https://i.picsum.photos/id/1055/5472/3648.jpg?hmac=1c293cGVlNouNQsjxT8y3nsYO-7qLCaOBEGvih0ibEU);
+            background-size: cover;
+        }
+
+        .frm{
+            display: flex;
+            border-style: solid;
+            padding: 20px;
+            border-radius: 20px;
+            font-size: 24px;
+            margin: 5px;
+        }
+    </style>
+    <script src="2.js"></script>
+</head>
+<body>
+    <div class="design">
+        <div class="frm">
+        <form action="" onsubmit="return(Submit())">
+            <label for="username" name="username">Username:</label><br>
+            <input id="id1" type="text" placeholder="Type here"><br>
+
+            <label for="Password" name="Password">Password:</label><br>
+            <input id="id2" type="password" placeholder="password"><br>
+
+            <button >Submit</button>
+        </form>
+        </div>
+
+        <div id="Output">
+
+        </div>
+
+        
+    </div>
+</body>
+</html>
